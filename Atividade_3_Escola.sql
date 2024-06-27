@@ -34,4 +34,6 @@ CREATE TABLE tb_alunos (
     
 	SELECT * FROM tb_alunos WHERE notas < 7.0;
     
-    UPDATE tb_alunos SET notas = 9.9 WHERE id = 31;
+    UPDATE tb_alunos SET notas = 10.0 WHERE id = 31;
+    
+    ALTER TABLE tb_alunos MODIFY notas DECIMAL(3,1); -- Alterando as casas decimais das notas ;
